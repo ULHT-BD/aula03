@@ -93,3 +93,6 @@ O comando SQL ```DELETE``` permite remover tuplos de uma relação. Lembre-se de
 5.3 Remova da relação emp os empregados cujo salário é inferior a ```1000```
 
 5.4 Remova a região Europa e verifique o comportamento?
+
+## Slack
+Para dúvidas e discussões pode juntar-se ao grupo slack desta turma através do [link](https://join.slack.com/t/ulht-bd/shared_invite/zt-1h783xcc2-eRQlIYSqFkDeOAqGC045Rw)
