@@ -28,7 +28,14 @@ d. Pode agora instanciar um novo container baseado na imagem que acabou de criar
 a. Descarregue e instale o cliente DBeaver Community em https://dbeaver.io/download/
 
 b. Crie uma nova ligação para aceder ao MariaDB a correr no seu docker
+<img width="1007" alt="image" src="https://user-images.githubusercontent.com/32137262/193685274-c7175ac4-881a-4b59-b019-273713ca8633.png">
 * host: ```localhost```
 * port: ```3306```
 * user: ```admin```
 * password: ```admin```
+
+<img width="699" alt="image" src="https://user-images.githubusercontent.com/32137262/193685385-ecf08920-1726-4919-bc93-6569b8b9a127.png">
+
+c. Explore visualmente a Base de Dados exemplo hr
+<img width="890" alt="image" src="https://user-images.githubusercontent.com/32137262/193685718-b4bacf95-d66d-4b1d-9b13-848a1f8cf54e.png">
+
