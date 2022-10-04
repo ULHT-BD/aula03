@@ -62,6 +62,10 @@ O comando SQL ```SELECT``` permite obter ou consultar os tuplos existentes numa 
 
 2.4 Obtenha todos os tuplos e respetivos atributos sobre regiões
 
+2.5 Pesquise empregados cujo primeiro nome é 'John'
+
+2.6 Pesquise empregados cujo salário é superior a 6000
+
 ## 3. Comando Insert
 O comando SQL ```INSERT``` permite inserir tuplos numa relação. Após inserir cada uma das alíneas seguintes lembre-se de verificar que o conteúdo foi corretamente inserido utilizando o comando ```SELECT```
 
@@ -96,3 +100,5 @@ O comando SQL ```DELETE``` permite remover tuplos de uma relação. Lembre-se de
 
 ## Slack
 Para dúvidas e discussões pode juntar-se ao grupo slack desta turma através do [link](https://join.slack.com/t/ulht-bd/shared_invite/zt-1h783xcc2-eRQlIYSqFkDeOAqGC045Rw)
+
+Recorde a história das Bases de Dados Relacionais, introduzida nas aulas através da infografia e vídeo anexos (fontes: peterjamesthomas.com e www.computerhistory.org) 
