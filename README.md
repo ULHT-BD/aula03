@@ -58,8 +58,27 @@ c. Navegue e explore visualmente a Base de Dados exemplo hr
 
 
 ## 2. Comando Select
-O comando SQL ```SELECT``` permite obter ou consultar os tuplos existentes numa relação.
+O comando SQL ```SELECT``` permite obter ou consultar os tuplos existentes numa relação. A sintaxe é
+``` sql
+SELECT 
+  atributo1, atributo2, ...
+FROM
+  relacao;
+```
+NOTA:
+* ```*``` é um wildcard que representa todas as colunas/atributos
 
+Exemplos:
+* obter atributos nome e idade da relação/tabela estudante:
+``` sql
+SELECT nome, idade FROM estudante;
+```
+* obter todos os atributos da relação/tabela estudante:
+``` sql
+SELECT * FROM estudante;
+```
+
+### Exercício
 2.1 Obtenha a lista de todos os nomes de países existentes na relação Countries
 
 2.2 Obtenha a lista de todos os códigos e nomes de países existentes na relação Countries
