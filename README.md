@@ -60,10 +60,8 @@ c. Navegue e explore visualmente a Base de Dados exemplo hr
 ## 2. Comando Select
 O comando SQL ```SELECT``` permite obter ou consultar os tuplos existentes numa relação. A sintaxe é
 ``` sql
-SELECT 
-  atributo1, atributo2, ...
-FROM
-  relacao;
+SELECT atributo1, atributo2, ...
+FROM relacao;
 ```
 NOTA:
 * ```*``` é um wildcard que representa todas as colunas/atributos
