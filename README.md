@@ -27,12 +27,13 @@ c. Para criar a imagem docker que será usada nesta aula, abra uma linha de coma
   
   (relembre: a flag ```-t db``` atribui a tag db à imagem criada para futuras utilizações)
   
-  Pode verificar as imagens criadas utilizando o comando ```docker images```
-  
   ```sh
   cd ~\Desktop\docker_db_aula03
   docker build -t db .
   ```
+  
+  Pode listar as imagens criadas utilizando o comando ```docker images```
+  
   
 d. Pode agora instanciar um novo container baseado na imagem que acabou de criar. Utilize o comando ```docker run --name mysgbd -p 3306:3306 -d db```
   
