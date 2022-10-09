@@ -15,7 +15,7 @@ Pode relembrar a aula 1 através dos slides disponiveis [aqui](https://github.co
 
 ### 1.1 Instale e configure o Docker exemplo
 a. Comece por descarregar e instalar o docker em https://www.docker.com/products/docker-desktop/
-* NOTA: A instalação em ambiente Windows requer a instalação do [Windows System for Linux](https://docs.microsoft.com/en-us/windows/wsl/)
+* NOTA: A instalação em Windows requer a instalação do [Windows System for Linux](https://docs.microsoft.com/en-us/windows/wsl/)
 
 b. Descarregue o ficheiro zip [docker_db_aula03.zip](https://github.com/ULHT-BD/aula03/blob/main/docker_db_aula03.zip) disponibilizado neste repositório. Descomprima e examine o conteúdo.
 * O Dockerfile permite criar uma imagem docker com uma instância do MariaDB e uma base de dados exemplo hr com a seguinte estrutura.
