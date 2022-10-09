@@ -16,17 +16,24 @@ Pode relembrar a aula 1 através dos slides disponiveis [aqui](https://github.co
 ### 1.1 Instale e configure o Docker exemplo
 a. Comece por descarregar e instalar o docker em https://www.docker.com/products/docker-desktop/
 
+NOTA: A instalação em ambiente Windows requer a instalação do [Windows System for Linux](https://docs.microsoft.com/en-us/windows/wsl/)
+
 b. Descarregue o ficheiro zip [docker_db_aula03.zip](https://github.com/ULHT-BD/aula03/blob/main/docker_db_aula03.zip) disponibilizado neste repositório. Descomprima e examine o conteúdo.
 * O Dockerfile permite criar uma imagem docker com uma instância do MariaDB e uma base de dados exemplo hr com a seguinte estrutura.
 <img width="872" alt="image" src="https://user-images.githubusercontent.com/32137262/193691701-47c51106-73dd-4f88-b319-49c910e9ef5c.png">
 
 
-c. Para criar a imagem docker que será usada nesta aula, abra uma linha de comandos (terminal, powershell, ...) e navegue até à pasta que extraiu em c. Execute o comando 
+c. Para criar a imagem docker que será usada nesta aula, abra uma linha de comandos (terminal, powershell, ...) e navegue até à pasta que extraiu no ponto b, onde encontrará o ficheiro Dockerfile. Execute o comando 
   ```docker build -t db .```
   
   (relembre: a flag ```-t db``` atribui a tag db à imagem criada para futuras utilizações)
   
   Pode verificar as imagens criadas utilizando o comando ```docker images```
+  
+  ```sh
+  cd ~\Desktop\docker_db_aula03
+  docker build -t db .
+  ```
   
 d. Pode agora instanciar um novo container baseado na imagem que acabou de criar. Utilize o comando ```docker run --name mysgbd -p 3306:3306 -d db```
   
