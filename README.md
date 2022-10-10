@@ -9,6 +9,10 @@
 
 [5. Comando Delete](#5-comando-delete)
 
+[Bibliografia e Referências](#bibliografia-e-referencias)
+
+[Outros](#outros)
+
 ## 1. Prepare o seu ambiente de trabalho
 
 Pode relembrar a aula 1 através dos slides disponiveis [aqui](https://github.com/ULHT-BD/aula03/blob/main/Aula01%20-%20Apresentacao%20-%20BD%20-%20Docker.pdf)
@@ -27,7 +31,7 @@ c. Para criar a imagem docker que será usada nesta aula, abra uma linha de coma
   
   (relembre: a flag ```-t db``` atribui a tag db à imagem criada para futuras utilizações)
   
-  ```sh
+  ``` sh
   cd ~\Desktop\docker_db_aula03
   docker build -t db .
   ```
@@ -122,7 +126,8 @@ O comando SQL ```DELETE``` permite remover tuplos de uma relação. Lembre-se de
 
 5.4 Remova a região Europa e verifique o comportamento?
 
-## Slack
-Para dúvidas e discussões pode juntar-se ao grupo slack desta turma através do [link](https://join.slack.com/t/ulht-bd/shared_invite/zt-1h783xcc2-eRQlIYSqFkDeOAqGC045Rw)
-
+## Bibliografia e Referências
 Recorde a história das Bases de Dados Relacionais, introduzida nas aulas através da infografia e vídeo anexos (fontes: peterjamesthomas.com e www.computerhistory.org) 
+
+## Outros
+Para dúvidas e discussões pode juntar-se ao grupo slack da turma através do [link](https://join.slack.com/t/ulht-bd/shared_invite/zt-1h783xcc2-eRQlIYSqFkDeOAqGC045Rw)
