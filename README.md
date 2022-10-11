@@ -118,6 +118,21 @@ VALUES
   (t2-valor-atribut1, t2-valor-atributo2, ...),
   (t3-valor-atribut1, t3-valor-atributo2, ...);
 ```
+Exemplos:
+* inserir um estudante na relação estudante(numero, nome, idade, email):
+``` sql
+INSERT INTO estudante VALUES (1534, 'José Ribeiro', 21, 'jose.ribeiro@ulusofona.pt');
+```
+* inserir um estudante, com apenas informação de numero, nome e idade mas sem email, na relação estudante(numero, nome, idade, email):
+``` sql
+INSERT INTO estudante (numero, nome, idade) VALUES (1534, 'José Ribeiro', 21);
+```
+* inserir dois estudantes na relação estudante(numero, nome, idade, email):
+``` sql
+INSERT INTO estudante 
+VALUES (1534, 'José Ribeiro', 21, 'jose.ribeiro@ulusofona.pt'),(1535, 'Rita Rodrigues', 20, 'rita.rodrigues@ulusofona.pt');
+```
+
 ### Exercícios
 Para cada uma das alíneas seguintes, escreva a query que permite obter:
 1. Utilize o comando insert para inserir o País Portugal na tabela countries
@@ -136,6 +151,15 @@ UPDATE relacao
 SET atributo1 = valor-atribut1, atributo2 = valor-atributo2, ...
 WHERE condição;
 ```
+Exemplos:
+* atualizar a idade do estudante com numero 1534 para 24:
+``` sql
+UPDATE estudante SET idade = 24 WHERE numero = 1534;
+```
+* atualizar a idade de todos os estudantes para 0:
+``` sql
+UPDATE estudante set idade = 0;
+```
 
 ### Exercícios
 Para cada uma das alíneas seguintes, escreva a query que permite obter:
@@ -150,6 +174,16 @@ O comando SQL ```DELETE``` permite remover tuplos de uma relação. Lembre-se de
 ``` sql
 DELETE FROM relacao
 WHERE condição;
+```
+
+Exemplos:
+*  remover o estudante com numero 1534:
+``` sql
+DELETE FROM estudante WHERE numero = 1534;
+```
+* remover todos os estudantes:
+``` sql
+DELETE FROM estudante;
 ```
 
 ### Exercícios
