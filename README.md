@@ -1,4 +1,6 @@
 # aula03
+Nesta aula começamos a trabalhar a linguagem SQL. Começamos por configurar o ambiente de trabalho com Docker, Base de Dados exemplo e cliente. Introduzimos a linguagem SQL começando com utilização do SELECT para obtenção de dados simples da BD, introduzimos a sintaxe INSERT para inserir tuplos, UPDATE para modificar dados e DELETE para remover tuplos. O conjunto de exercícios propostos permitem praticar e validar aprendizagem. Bom trabalho!
+
 [1. Prepare o seu ambiente de trabalho](#1-prepare-o-seu-ambiente-de-trabalho)
 
 [2. Comando Select](#2-comando-select)
@@ -81,50 +83,84 @@ SELECT nome, idade FROM estudante;
 SELECT * FROM estudante;
 ```
 
-### Exercício
-2.1 Obtenha a lista de todos os nomes de países existentes na relação Countries
+### Exercícios
+Para cada uma das alíneas seguintes, escreva a query que permite obter:
+1. Obtenha a lista de todos os nomes de países existentes na relação Countries
 
-2.2 Obtenha a lista de todos os códigos e nomes de países existentes na relação Countries
+2. Obtenha a lista de todos os códigos e nomes de países existentes na relação Countries
 
-2.3 Obtenha o primeiro nome, último nome e salário de todos os empregados
+3. Obtenha o primeiro nome, último nome e salário de todos os empregados
 
-2.4 Obtenha todos os tuplos e respetivos atributos sobre regiões
+4. Obtenha todos os tuplos e respetivos atributos sobre regiões
 
-2.5 Pesquise empregados cujo primeiro nome é 'John'
+5. Pesquise empregados cujo primeiro nome é 'John'
 
-2.6 Pesquise empregados cujo salário é superior a 6000
+6. Pesquise empregados cujo salário é superior a 6000
 
 ## 3. Comando Insert
-O comando SQL ```INSERT``` permite inserir tuplos numa relação. Após inserir cada uma das alíneas seguintes lembre-se de verificar que o conteúdo foi corretamente inserido utilizando o comando ```SELECT```
+O comando SQL ```INSERT``` permite inserir tuplos numa relação. Após inserir cada uma das alíneas seguintes lembre-se de verificar que o conteúdo foi corretamente inserido utilizando o comando ```SELECT```. A sintaxe é
+``` sql
+INSERT INTO relacao (atributo1, atributo2, ...)
+VALUES (valor-atribut1, valor-atributo2, ...);
+```
 
-3.1 Utilize o comando insert para inserir o País Portugal na tabela countries
+Caso queira inserir um tuplo completo pode omitir o nome dos atributos ter atençao de respeitar a ordem pela qual foram criados, a sintaxe é
+``` sql
+INSERT INTO relacao
+VALUES (valor-atribut1, valor-atributo2, ...);
+```
+
+Em qualquer um dos formatos anteriores pode inserir varios tuplos de uma so vez separando-os por virgula, por exemplo
+``` sql
+INSERT INTO relacao
+VALUES 
+  (t1-valor-atribut1, t1-valor-atributo2, ...),
+  (t2-valor-atribut1, t2-valor-atributo2, ...),
+  (t3-valor-atribut1, t3-valor-atributo2, ...);
+```
+###Exercícios
+Para cada uma das alíneas seguintes, escreva a query que permite obter:
+1. Utilize o comando insert para inserir o País Portugal na tabela countries
 * ```COUNTRY_ID = 'PT'```
 * ```COUNTRY_NAME = 'Portugal'```
 * ```REGION_ID = 1``` (Europe)
 
-3.2 Utilize o comando insert para inserir tuplos para os países Áustria (AT), Hungria (HU), Peru (PE) e Tailândia (TH)
+2. Utilize o comando insert para inserir tuplos para os países Áustria (AT), Hungria (HU), Peru (PE) e Tailândia (TH)
 
-3.3 Crie um novo cargo DB Administrator (IT_DBA) com salário compreendido entre 6000 e 12000
+3. Crie um novo cargo DB Administrator (IT_DBA) com salário compreendido entre 6000 e 12000
 
 ## 4. Comando Update
-O comando SQL ```UPDATE``` permite modificar valores de tuplos numa relação. Lembre-se de utilizar o comando ```SELECT``` antes e após alterar o conteúdo indicado em cada uma das alíneas seguintes para verificar que o conteúdo foi corretamente alterado
+O comando SQL ```UPDATE``` permite modificar valores de tuplos numa relação. Lembre-se de utilizar o comando ```SELECT``` antes e após alterar o conteúdo indicado em cada uma das alíneas seguintes para verificar que o conteúdo foi corretamente alterado. A sintaxe é
+``` sql
+UPDATE relacao
+SET atributo1 = valor-atribut1, atributo2 = valor-atributo2, ...
+WHERE condição;
+```
 
-4.1 Utilize o comando update para alterar o nome da região ```Europe``` para o nome português ```Europa```. Atualize as restantes regiões também para português
+### Exercícios
+Para cada uma das alíneas seguintes, escreva a query que permite obter:
+1. Utilize o comando update para alterar o nome da região ```Europe``` para o nome português ```Europa```. Atualize as restantes regiões também para português
 
-4.2 Utilize o comando update para alterar o salário do ```Michael Rogers``` para ```3300``` e o apelido do ```John Chen``` para ```Smith```
+2. Utilize o comando update para alterar o salário do ```Michael Rogers``` para ```3300``` e o apelido do ```John Chen``` para ```Smith```
 
-4.3 Atualize o salário mínimo de todas as funções para ```3500```
+3. Atualize o salário mínimo de todas as funções para ```3500```
 
 ## 5. Comando Delete
-O comando SQL ```DELETE``` permite remover tuplos de uma relação. Lembre-se de utilizar o comando ```SELECT``` antes e após remover o conteúdo indicado em cada uma das alíneas seguintes para verificar o comportamento pretendido
+O comando SQL ```DELETE``` permite remover tuplos de uma relação. Lembre-se de utilizar o comando ```SELECT``` antes e após remover o conteúdo indicado em cada uma das alíneas seguintes para verificar o comportamento pretendido. A sintaxe é
+``` sql
+DELETE FROM relacao
+WHERE condição;
+```
 
-5.1 Utilize o comando delete para remover o país Espanha da relação countries
+### Exercícios
+Para cada uma das alíneas seguintes, escreva a query que permite obter:
+1. Utilize o comando delete para remover o país Hungria da relação countries
 
-5.2 Remova da relação emp o empregado cujo nome é ```Adams```
+2. Remova da relação emp o empregado cujo nome é ```Adams```
 
-5.3 Remova da relação emp os empregados cujo salário é inferior a ```1000```
+3. Remova da relação emp os empregados cujo salário é inferior a ```1000```
 
-5.4 Remova a região Europa e verifique o comportamento?
+4. Remova a região Europa e verifique o comportamento?
 
 ## Bibliografia e Referências
 Recorde a história das Bases de Dados Relacionais, introduzida nas aulas através da infografia e vídeo anexos (fontes: peterjamesthomas.com e www.computerhistory.org) 
