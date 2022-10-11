@@ -63,6 +63,8 @@ b. Crie uma nova ligação para aceder ao MariaDB a correr no seu docker
 c. Navegue e explore visualmente a Base de Dados exemplo hr
 <img width="890" alt="image" src="https://user-images.githubusercontent.com/32137262/193685718-b4bacf95-d66d-4b1d-9b13-848a1f8cf54e.png">
 
+d. Utilize o cliente para executar as suas queries. Abra um novo script SQL, escreva a query, execute e examine o resultado
+<img width="1421" alt="image" src="https://user-images.githubusercontent.com/32137262/195207651-0b2f51f0-b75c-4340-a8c7-46531d334d4e.png">
 
 ## 2. Comando Select
 O comando SQL ```SELECT``` permite obter ou consultar os tuplos existentes numa relação. A sintaxe é
