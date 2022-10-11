@@ -118,7 +118,7 @@ VALUES
   (t2-valor-atribut1, t2-valor-atributo2, ...),
   (t3-valor-atribut1, t3-valor-atributo2, ...);
 ```
-###Exercícios
+### Exercícios
 Para cada uma das alíneas seguintes, escreva a query que permite obter:
 1. Utilize o comando insert para inserir o País Portugal na tabela countries
 * ```COUNTRY_ID = 'PT'```
