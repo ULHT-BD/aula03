@@ -11,7 +11,7 @@ Nesta aula começamos a trabalhar a linguagem SQL. Começamos por configurar o a
 
 [5. Comando Delete](#5-comando-delete)
 
-[Bibliografia e Referências](#bibliografia-e-referencias)
+[Bibliografia e Referências](#bibliografia-e-referências)
 
 [Outros](#outros)
 
@@ -199,7 +199,8 @@ Para cada uma das alíneas seguintes, escreva a query que permite obter:
 4. Remova a região Europa e verifique o comportamento?
 
 ## Bibliografia e Referências
-Recorde a história das Bases de Dados Relacionais, introduzida nas aulas através da infografia e vídeo anexos (fontes: peterjamesthomas.com e www.computerhistory.org) 
+* Recorde a história das Bases de Dados Relacionais, introduzida nas aulas através da infografia e vídeo (fontes: peterjamesthomas.com e www.computerhistory.org) 
+* [Bases de Dados Relacionais - Introdução e Conceitos (vídeo)](https://youtu.be/NvrpuBAMddw)
 
 ## Outros
 Para dúvidas e discussões pode juntar-se ao grupo slack da turma através do [link](https://join.slack.com/t/ulht-bd/shared_invite/zt-1h783xcc2-eRQlIYSqFkDeOAqGC045Rw)
